@@ -6,7 +6,7 @@
 
 
 1. 기초 편(1장 ~ 6장) 리뷰
-  - [https://nirvana-article.netlify.app/post/2022-05-30/tdd-django/](https://nirvana-article.netlify.app/post/2022-05-30/tdd-django/)
+  - [클린 코드를 위한 테스트 주도 개발 기초편](https://nirvana-article.netlify.app/post/2022-05-30/tdd-django/)
 2. 웹 개발 핵심편(7장 ~ 14장) 리뷰
   - 진행중
 3. 고급편(15장 ~ 20장) 리뷰
@@ -14,7 +14,7 @@
 
 --- 
 - 4.0 버전으로 개발하며 생긴 일
-  - [https://nirvana-article.netlify.app/post/2022-06-26/tdd-django_2/](https://nirvana-article.netlify.app/post/2022-06-26/tdd-django-error/)
+  - [클린 코드를 위한 테스트 주도 개발 오류편](https://nirvana-article.netlify.app/post/2022-06-26/tdd-django-error/)
 
 
 
