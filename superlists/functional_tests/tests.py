@@ -1,3 +1,4 @@
+from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -5,7 +6,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import unittest
 
-class NewVisitorTest(unittest.TestCase):
+class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
         """설치되어 있는 크롬으로 설정"""
@@ -18,8 +19,8 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.quit()
 
     def test_can_start_a_list_and_retrieve_it_later(self):
-        self.browser.get("http://localhost:8000")
-
+        # 로컬호스트 대신에 live_server_url 속성으로 변경
+        self.browser.get(self.live_server_url)
 
         # 타이틀 확인
         self.assertIn('To-Do', self.browser.title)
@@ -47,6 +48,3 @@ class NewVisitorTest(unittest.TestCase):
 
 
         self.fail('Finish the test!')
-
-if __name__ == '__main__':
-    unittest.main(warnings='ignore')
